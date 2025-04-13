@@ -1,0 +1,34 @@
+# 🚀 Introduction to BTL1 & Study Strategy
+
+> Welcome to the starting point of your Blue Team Level 1 (BTL1) preparation journey! This initial module lays the foundation for tackling the certification, focusing on understanding the exam's nature, developing the right mindset, and outlining a solid strategy.
+
+---
+
+## 💡 Why BTL1? My Take on the Best Defensive Certification
+
+Before diving into the technical details, let me share my perspective. In my opinion, and based on my experience (including achieving the Gold Coin after review):
+
+> **BTL1 is arguably the *best* entry-to-mid-level certification currently available for practical, defensive cybersecurity.**
+
+Why?
+
+* **Unmatched Realism:** Unlike many certs focused on multiple-choice or isolated theory, BTL1 throws you into a **highly realistic, 24-hour simulated incident**. You're not just answering questions; you're *doing* the analysis required in a real SOC or IR team. It's the closest simulation to a genuine incident I've encountered at this level.
+* **Practical Skills Focus:** It forces you to master the _application_ of essential tools (`Splunk`, `Wireshark`, `Volatility`, `Autopsy`, etc.) – not just know their names. You learn by _doing_.
+* **Exceptional Value:** Considering the depth of practical skills gained and the real-world simulation provided, the value offered by BTL1 significantly outweighs its cost compared to many alternatives. It's an investment in **demonstrable, job-ready abilities.**
+
+> If you want a certification that truly validates your capacity to perform as a junior Blue Teamer under pressure, BTL1 delivers. It's challenging, yes, but incredibly rewarding and directly applicable.
+
+---
+
+## 🗺️ Contents of this Module
+
+This introductory section covers:
+
+* **[What is BTL1?](./01_What_is_BTL1.md):** A detailed look at the certification itself.
+* **[Exam Philosophy](./02_Exam_Philosophy.md):** Understanding the practical mindset BTL1 aims to assess.
+* **[General Strategy](./03_General_Strategy.md):** Tips for approaching the 24-hour exam, time management, and note-taking.
+* **[My BTL1 Experience & Gold Coin Tip](./04_My_BTL1_Experience.md):** Personal insights, lessons learned, and crucial advice on requesting exam reviews.
+
+---
+
+> _Dive into these foundational sections to understand the challenge ahead and prepare your approach!_
