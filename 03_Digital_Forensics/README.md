@@ -47,7 +47,3 @@ This section of the repository will focus on the key areas of digital forensics 
 
 ---
 
-<p align="center"> 
-  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
-  <br> <strong><em><code> NERVI0zz0</code></em></strong> 
-  </p>
