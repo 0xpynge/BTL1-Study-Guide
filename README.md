@@ -1,145 +1,174 @@
-# 🛡️ Practical Study Guide for BTL1 (Blue Team Level 1) 🛡️
-
 <p align="center">
-  <img src="assets/img/banner.jpg" alt="BTL1 Study Guide Banner" width="80%"> 
+  <img src="assets/img/banner.jpg" alt="BTL1 Study Guide Banner" width="85%"> 
   </p>
 
+<h1 align="center">🛡️ BTL1 Practical Study Guide 🛡️</h1>
+
 <p align="center">
-  <a href="https://elearning.securityblue.team/home/certifications/blue-team-level-1" target="_blank">
-    <img src="https://img.shields.io/badge/Certification-BTL1_Official-0078D4?style=for-the-badge" alt="Official BTL1 Certification">
-  </a>
-  <a href="./LICENSE" target="_blank">
-    <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
-  </a>
-  <img src="https://img.shields.io/badge/Status-Work_In_Progress-orange?style=for-the-badge" alt="Status: Work In Progress">
+  <em>A Hands-On Companion for the Blue Team Level 1 Certification</em>
 </p>
 
-> **Welcome to this personal study guide for preparing for the Security Blue Team BTL1 certification.**
-> 
-> This repository compiles notes, cheatsheets, workflows, and resources aiming to help you consolidate the practical skills needed to tackle the BTL1 exam and grow as a cyber defense (Blue Team) professional.
-> 
-> The focus is **eminently practical**, reflecting the nature of the BTL1 exam. It centers on knowing _what to do_, _how to do it_, and _with which tools_ in realistic scenarios.
----
-
-## 🎯 Who is This For?
-
-* Students actively preparing for the BTL1 certification.
-* Junior Cybersecurity Professionals (SOC Analysts Tier 1, Jr. Incident Responders) looking to strengthen practical foundations.
-* Cyber defense enthusiasts seeking a practical and centralized guide.
-## ✨ Key Features:
-
-* **Practical Focus:** Aligned with the BTL1 exam philosophy.
-* **Detailed Cheatsheets:** Key commands and steps for fundamental tools.
-* **Suggested Workflows:** Step-by-step guides for common tasks.
-* **Modular Structure:** Organized by BTL1 domains for focused study.
-* **Selected Resources:** Direct links to tools, documentation, and practice sites.
+<p align="center">
+  <a href="https://elearning.securityblue.team/home/certifications/blue-team-level-1" target="_blank" title="Official BTL1 Certification Page">
+    <img src="https://img.shields.io/badge/Certification-BTL1_Official-0078D4?style=for-the-badge&logo=securityblueteam&logoColor=white" alt="BTL1 Certification Badge">
+  </a>
+  <a href="./LICENSE" target="_blank" title="MIT License">
+    <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License Badge">
+  </a>
+  <img src="https://img.shields.io/badge/Status-Work_In_Progress-orange?style=for-the-badge" alt="Status Badge">
+  </p>
 
 ---
 
-## 🛠️ Main Tools Covered
+> ## 🚀 Welcome Blue Teamer!
+>
+> Welcome to this practical study guide designed to equip you with the hands-on skills needed for the **Security Blue Team - Blue Team Level 1 (BTL1)** certification. Drawing from real-world experience and a deep understanding of the BTL1 domains, this repository compiles essential notes, cheatsheets, workflows, and resources.
+>
+> BTL1 tests **practical application**, not just theoretical knowledge. This guide mirrors that philosophy, focusing intently on _what actions to take_, _how to perform them_, and _which tools to leverage_ effectively in realistic security scenarios.
 
-This repository delves into the practical use of key tools found in the BTL1 environment and the day-to-day work of a security analyst:
+---
 
-* **SIEM:** `Splunk` (SPL), `Elastic Stack` (ELK/Basic KQL)
-* **Network Analysis:** `Wireshark`, `Tshark`
-* **Memory Forensics:** `Volatility 2/3`
+## 🎯 Who is This Guide For?
+
+This resource is tailored for:
+
+* 👨‍🎓 **Aspiring BTL1 Candidates:** Individuals actively preparing for the certification exam.
+* 💻 **Junior Cyber Professionals:** SOC Analysts (Tier 1/2), Junior Incident Responders, SysAdmins, or IT professionals aiming to transition into or solidify their skills in defensive security roles.
+* 🛡️ **Cyber Defense Enthusiasts:** Anyone passionate about learning practical Blue Team operations through a structured, hands-on approach.
+
+> **Assumed Knowledge:** A foundational grasp of networking (TCP/IP, DNS, HTTP), operating systems (Windows & Linux command-line basics), and core cybersecurity concepts will be beneficial.
+
+---
+
+## ✨ Key Features
+
+* **🛠️ Hands-On Focus:** Directly aligned with the practical, scenario-based nature of the BTL1 exam.
+* **📄 Detailed Cheatsheets:** Quick-reference guides for crucial commands and tool functionalities.
+* **💡 Structured Workflows:** Step-by-step methodologies for common analysis tasks (Phishing, IoC Investigation, etc.).
+* **🧩 Modular Organization:** Content arranged by official BTL1 domains for focused learning.
+* **🔗 Curated Resources:** Vetted links to essential tools, official documentation, and effective practice platforms.
+
+---
+
+<details>
+<summary><strong>🧰 Main Tools Covered</strong></summary>
+<br>
+
+> This guide explores the practical application of key tools encountered in the BTL1 certification environment and common in security analysis roles:
+
+* **SIEM:** `Splunk` (using SPL), `Elastic Stack` (ELK Stack fundamentals)
+* **Network Traffic Analysis:** `Wireshark`, `Tshark`
+* **Memory Forensics:** `Volatility 2` / `Volatility 3`
 * **Disk Forensics:** `Autopsy`, `The Sleuth Kit (TSK)`, `FTK Imager`
-* **Rapid Collection & Analysis:** `KAPE` (Kroll Artifact Parser and Extractor)
-* **Malware/File Analysis:** `VirusTotal`, `Hybrid Analysis`, `Any.Run`, `ExifTool`
+* **Endpoint Data Collection:** `KAPE` (Kroll Artifact Parser and Extractor)
+* **File/Malware Analysis:** `VirusTotal`, `Hybrid Analysis`, `Any.Run`, `ExifTool`
 * **File Carving:** `Scalpel`, `Foremost`
-* **Log Analysis:** Native commands (Linux/Windows), `Sysinternals Suite`
-* **Threat Intelligence:** `MITRE ATT&CK Framework`, `URLhaus`, `AbuseIPDB`
+* **Log Analysis (CLI):** Native commands (Linux/Windows), `Sysinternals Suite`
+* **Threat Intelligence Platforms:** `URLhaus`, `AbuseIPDB`, `OTX`
+
+</details>
+
 ---
 
 ## 🧭 Repository Structure
 
-The guide is divided into modules corresponding to the core BTL1 domains:
+> The guide is logically organized into modules reflecting the core BTL1 domains. Consult the `README.md` within each module folder for specific contents.
 
-| Module                     | Brief Description                                                          |
-| :------------------------- | :------------------------------------------------------------------------- |
-| `00_Introduction_BTL1`   | BTL1 fundamentals, mindset, and exam strategy.                             |
-| `01_Phishing_Analysis`   | Dissecting emails, analyzing URLs and attachments.                         |
-| `02_Threat_Intelligence` | Practical application of CTI, IoCs, TTPs, and MITRE ATT&CK.                |
-| `03_Digital_Forensics`   | Acquisition and analysis of digital evidence on disk and memory (Win/Lin). |
-| `04_SIEM_Analysis`       | Searching, correlating, and analyzing centralized logs (`Splunk`).           |
-| `05_Network_Analysis`    | Interpreting network traffic, identifying anomalies and protocols (PCAPs). |
-| `06_Incident_Response`   | Techniques and commands for initial identification and analysis on live systems. |
-| `assets`                 | Images, diagrams, and other supporting visual resources.                   |
+| Module                       | Brief Description                                                          | Status      |
+| :--------------------------- | :------------------------------------------------------------------------- | :---------- |
+| `00_Introduction_BTL1`     | BTL1 fundamentals, critical thinking, and exam strategy.                   | `Completed` |
+| `01_Phishing_Analysis`     | Dissecting emails, analyzing headers, URLs, and attachments.               | `Completed` |
+| `02_Threat_Intelligence`   | Applying CTI, `IoCs`, `TTPs`, and the `MITRE ATT&CK` Framework.            | `Completed` |
+| `03_Digital_Forensics`     | Acquiring and analyzing evidence from disk and memory (`Win`/`Lin`).         | `Completed` |
+| `04_SIEM_Analysis`         | Searching, correlating, and analyzing logs in `Splunk`.                      | `Completed` |
+| `05_Network_Analysis`      | Interpreting `PCAP`s, identifying protocols, and spotting anomalies.        | `Completed` |
+| `06_Incident_Response`     | Lifecycle, live response techniques, containment concepts.                 | `Completed` |
+| `assets/`                    | Supporting images, diagrams, etc.                                          | `N/A`       |
+| `CONTRIBUTING.md`            | Guidelines for contributing.                                               | `Available` |
+| `CODE_OF_CONDUCT.md`       | Community standards.                                                       | `Available` |
+| `LICENSE`                    | MIT License details.                                                       | `Available` |
 ---
 
 ## 🗺️ Detailed Table of Contents
 
 <details>
-<summary><strong>► Click to expand/collapse Detailed Table of Contents</strong></summary>
-<br> * [**🚀 Introduction to BTL1**](./00_Introduction_BTL1/)
+<summary><strong>► Click to Navigate Study Modules</strong></summary>
+<br>
+
+* [**🚀 Introduction & Strategy (`./00_Introduction_BTL1/`)**](./00_Introduction_BTL1/)
     * [What is BTL1?](./00_Introduction_BTL1/01_What_is_BTL1.md)
     * [Exam Philosophy](./00_Introduction_BTL1/02_Exam_Philosophy.md)
     * [General Strategy](./00_Introduction_BTL1/03_General_Strategy.md)
-* [**🎣 Phishing Analysis**](./01_Phishing_Analysis/)
+* [**🎣 Phishing Analysis (`./01_Phishing_Analysis/`)**](./01_Phishing_Analysis/)
     * [Key Concepts](./01_Phishing_Analysis/01_Key_Concepts.md)
-    * [Tools](./01_Phishing_Analysis/02_Tools.md)
+    * [Essential Tools](./01_Phishing_Analysis/02_Tools.md)
     * [Commands Cheatsheet](./01_Phishing_Analysis/03_Commands_Cheatsheet.md)
     * [Analysis Workflow](./01_Phishing_Analysis/04_Analysis_Workflow.md)
     * [Practice Resources](./01_Phishing_Analysis/05_Practice_Resources.md)
-* [**💡 Threat Intelligence**](./02_Threat_Intelligence/)
+* [**💡 Threat Intelligence (`./02_Threat_Intelligence/`)**](./02_Threat_Intelligence/)
     * [Key Concepts](./02_Threat_Intelligence/01_Key_Concepts.md)
-    * [MITRE ATT&CK](./02_Threat_Intelligence/02_MITRE_ATTACK.md)
-    * [Tools](./02_Threat_Intelligence/03_Tools.md)
-    * [IoC Workflow](./02_Threat_Intelligence/04_IoC_Workflow.md)
+    * [MITRE ATT&CK Framework](./02_Threat_Intelligence/02_MITRE_ATTACK.md)
+    * [Key Tools](./02_Threat_Intelligence/03_Tools.md)
+    * [IoC Investigation Workflow](./02_Threat_Intelligence/04_IoC_Workflow.md)
     * [Practice Resources](./02_Threat_Intelligence/05_Practice_Resources.md)
-* [**🕵️ Digital Forensics**](./03_Digital_Forensics/)
-    * [Principles and Acquisition](./03_Digital_Forensics/01_Acquisition.md)
-    * [Disk Analysis](./03_Digital_Forensics/02_Disk_Analysis/)
+* [**🕵️ Digital Forensics (`./03_Digital_Forensics/`)**](./03_Digital_Forensics/)
+    * [Evidence Acquisition](./03_Digital_Forensics/01_Acquisition.md)
+    * [Disk Analysis (`./02_Disk_Analysis/`)](./03_Digital_Forensics/02_Disk_Analysis/)
         * [Windows Artifacts](./03_Digital_Forensics/02_Disk_Analysis/Windows_Artifacts.md)
         * [Linux Artifacts](./03_Digital_Forensics/02_Disk_Analysis/Linux_Artifacts.md)
-        * [Disk Tools (`Autopsy`, `TSK`, `KAPE`)](./03_Digital_Forensics/02_Disk_Analysis/Disk_Tools.md)
+        * [Common Tools](./03_Digital_Forensics/02_Disk_Analysis/Disk_Tools.md)
         * [File Carving (`Scalpel`)](./03_Digital_Forensics/02_Disk_Analysis/File_Carving_Scalpel.md)
         * [Metadata (`ExifTool`)](./03_Digital_Forensics/02_Disk_Analysis/Metadata_ExifTool.md)
-    * [Memory Analysis](./03_Digital_Forensics/03_Memory_Analysis/)
-        * [Key Concepts](./03_Digital_Forensics/03_Memory_Analysis/Key_Concepts.md)
-        * [`Volatility` Tool](./03_Digital_Forensics/03_Memory_Analysis/Volatility_Tool.md)
+    * [Memory Analysis (`./03_Memory_Analysis/`)](./03_Digital_Forensics/03_Memory_Analysis/)
+        * [Key Concepts & Artifacts](./03_Digital_Forensics/03_Memory_Analysis/Key_Concepts.md)
+        * [Volatility Tool](./03_Digital_Forensics/03_Memory_Analysis/Volatility_Tool.md)
     * [Practice Resources](./03_Digital_Forensics/04_Practice_Resources.md)
-* [**📊 SIEM Analysis**](./04_SIEM_Analysis/)
+* [**📊 SIEM Analysis (`./04_SIEM_Analysis/`)**](./04_SIEM_Analysis/)
     * [Key Concepts](./04_SIEM_Analysis/01_Key_Concepts.md)
-    * [`Splunk` Cheatsheet](./04_SIEM_Analysis/02_Splunk_Cheatsheet.md)
-    * [Common Searches](./04_SIEM_Analysis/04_Common_Searches.md)
-    * [Practice Resources](./04_SIEM_Analysis/05_Practice_Resources.md)
-* [**🌐 Network Analysis**](./05_Network_Analysis/)
+    * [Splunk Cheatsheet](./04_SIEM_Analysis/02_Splunk_Cheatsheet.md)
+    * [Common Searches](./04_SIEM_Analysis/03_Common_Searches.md)
+    * [Practice Resources](./04_SIEM_Analysis/04_Practice_Resources.md)
+* [**🌐 Network Analysis (`./05_Network_Analysis/`)**](./05_Network_Analysis/)
     * [Key Concepts](./05_Network_Analysis/01_Key_Concepts.md)
-    * [`Wireshark` / `Tshark`](./05_Network_Analysis/02_Wireshark_Tshark.md)
+    * [Wireshark / Tshark](./05_Network_Analysis/02_Wireshark_Tshark.md)
     * [Filters Cheatsheet](./05_Network_Analysis/03_Filters_Cheatsheet.md)
     * [Specific Protocol Analysis](./05_Network_Analysis/04_Specific_Protocol_Analysis.md)
     * [Malicious Patterns](./05_Network_Analysis/05_Malicious_Patterns.md)
     * [Practice Resources](./05_Network_Analysis/06_Practice_Resources.md)
-* [**🔥 Incident Response**](./06_Incident_Response/)
+* [**🔥 Incident Response (`./06_Incident_Response/`)**](./06_Incident_Response/)
     * [IR Lifecycle](./06_Incident_Response/01_IR_Lifecycle.md)
-    * [Live Response Windows](./06_Incident_Response/02_Live_Response_Windows.md)
-    * [Live Response Linux](./06_Incident_Response/03_Live_Response_Linux.md)
-    * [Containment & Eradication](./06_Incident_Response/04_Containment_Eradication.md)
+    * [Live Response (Windows)](./06_Incident_Response/02_Live_Response_Windows.md)
+    * [Live Response (Linux)](./06_Incident_Response/03_Live_Response_Linux.md)
+    * [Containment & Eradication (Concepts)](./06_Incident_Response/04_Containment_Eradication.md)
     * [Practice Resources](./06_Incident_Response/05_Practice_Resources.md)
-    </details>
+
+</details>
 
 ---
 
-## ✨ How to Make the Most of It
+## ⭐ How to Use This Guide Effectively
 
-1.  **Explore by Domain:** Use the Table of Contents to jump directly to the area you need to review.
-2.  **Deep Dive into Tools:** Check the specific cheatsheets and workflows for each key tool (`Volatility`, `Splunk`, `Wireshark`, etc.).
-3.  **Practice:** Apply the commands and techniques in labs (BTLO, CyberDefenders, TryHackMe). This repo is your quick reference companion.
-4.  **Adapt and Expand:** This is your space! Edit, add your own discoveries, notes, or useful scripts.
-5.  **Visualize:** Where you see diagrams or mentions of flows, try to visualize them mentally or draw them out.
+1.  **🎯 Target Your Study:** Use the Table of Contents or `Repository Structure` to navigate to specific BTL1 domains or tools.
+2.  **🧠 Understand Concepts:** Read the "Key Concepts" sections first to grasp the fundamentals.
+3.  **🛠️ Learn the Tools:** Review cheatsheets and practice with the essential tools (`Volatility`, `Splunk`, `Wireshark`, `Autopsy`, etc.).
+4.  **⚙️ Apply Workflows:** Use the suggested workflows as a baseline for your analysis process in practice labs.
+5.  **🧪 Practice Relentlessly:** The key to BTL1 success is hands-on practice. Use resources like BTLO, CyberDefenders, TryHackMe, and BOTS datasets. This guide serves as your reference during practice.
+6.  **✍️ Adapt & Contribute:** This is a living guide. Fork it, add your insights, or suggest improvements via [Issues](../../issues) or Pull Requests. See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+
 ---
 
 ## 🤝 Contributions and Feedback
 
-> Although this is primarily a personal study repository, if you find any errors, have suggestions for improving the content, or want to propose additions, please **open an Issue** in this repository. All constructive feedback is welcome.
+> While originating from personal study notes (including experience leading to a BTL1 Gold Coin), this guide aims to be a valuable community resource. Contributions are welcome! Please refer to the [`CONTRIBUTING.md`](./CONTRIBUTING.md) file for guidelines and open an [Issue](../../issues) for suggestions or bug reports.
+
 ---
 
 ## ⚠️ Disclaimer and Confidentiality
 
-> The information contained herein is based on personal experience, the original provided material, and publicly available resources. Cybersecurity is a dynamic field. **Always verify information with the official BTL1 syllabus and tool documentation.** The author is not responsible for the use of the information presented here.
+> The information herein is based on personal experience, study of BTL1 domain concepts, and publicly available resources. Cybersecurity is dynamic; **always cross-reference with the official BTL1 syllabus and tool documentation.** Use this information responsibly.
 >
-> **Important: The Security Blue Team Non-Disclosure Agreement (NDA) is strictly respected.** This repository does not, and will not, contain leaked questions, direct solutions to exam scenarios, or any proprietary information covered by said agreement. The goal is to consolidate applicable general knowledge and techniques, not to compromise the integrity of the certification.
+> **Crucially: The Security Blue Team Non-Disclosure Agreement (NDA) is strictly respected.** This repository **does not** contain specific exam content, direct solutions, or any proprietary information protected by the NDA. It focuses on consolidating knowledge and techniques applicable to the BTL1 domains in general.
+
 ---
 
 ## 📄 License
