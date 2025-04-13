@@ -44,3 +44,10 @@ This section of the repository will focus on the key areas of digital forensics 
 > BTL1 assesses your ability to **apply specific forensic techniques** and **use standard tools** (`Autopsy`, `Volatility`, `FTK Imager`, `Scalpel`, `ExifTool`, `KAPE`, `TSK`, etc.) to find answers to specific questions within an incident scenario. A legal forensic expert level is not expected, but rather the correct application of basic principles and tools.
 
 ---
+
+---
+
+<p align="center"> 
+  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
+  <br> <strong><em><code> NERVI0zz0</code></em></strong> 
+  </p>

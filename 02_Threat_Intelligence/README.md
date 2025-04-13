@@ -15,3 +15,10 @@
 ---
 
 *Explore the files to understand how CTI enriches technical analysis and improves defensive posture.*
+
+---
+
+<p align="center"> 
+  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
+  <br> <strong><em><code> NERVI0zz0</code></em></strong> 
+  </p>

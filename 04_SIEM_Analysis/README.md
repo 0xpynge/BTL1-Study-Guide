@@ -14,3 +14,9 @@
 ---
 
 _Navigate through the files to understand how a SIEM centralizes visibility and empowers incident detection and response._
+---
+
+<p align="center"> 
+  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
+  <br> <strong><em><code> NERVI0zz0</code></em></strong> 
+  </p>

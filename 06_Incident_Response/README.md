@@ -39,10 +39,10 @@ In this section, we will cover:
 
 > _Incident response integrates many of the skills seen in previous sections (forensics, logs, network, CTI) into a structured process for managing security crises._
 >
-> <p align="center">
 
-  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
+---
 
-  <br> <strong><em><code>Nervi0zz</code></em></strong>
-
-  </p>
+<p align="center"> 
+  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
+  <br> <strong><em><code> NERVI0zz0</code></em></strong> 
+  </p>

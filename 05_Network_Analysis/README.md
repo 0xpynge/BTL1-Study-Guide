@@ -16,3 +16,10 @@
 ---
 
 > _Explore the files to master the art of interpreting network conversations and discover the activity hidden within the packets._
+
+---
+
+<p align="center"> 
+  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
+  <br> <strong><em><code> NERVI0zz0</code></em></strong> 
+  </p>
