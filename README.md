@@ -175,10 +175,9 @@ This resource is tailored for:
 
 Distributed under the **MIT License**. See the [`LICENSE`](./LICENSE) file for more details.
 
-<p align="center">
+---
 
-  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
-
-  <br> <strong><em><code>Nervi0zz</code></em></strong>
-
-  </p>
+<p align="center"> 
+  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
+  <br> <strong><em><code> NERVI0zz0</code></em></strong> 
+  </p>
