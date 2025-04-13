@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/img/btl.jpg" alt="BTL1 Study Guide Banner" width="85%"> 
+  <img src="assets/img/BANNER_BTL1.jpeg" alt="BTL1 Study Guide Banner" width="85%"> 
   </p>
 
 <h1 align="center">🛡️ BTL1 Practical Study Guide 🛡️</h1>
