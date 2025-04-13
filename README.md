@@ -174,3 +174,10 @@ This resource is tailored for:
 ## 📄 License
 
 Distributed under the **MIT License**. See the [`LICENSE`](./LICENSE) file for more details.
+
+
+---
+
+<p align="center"> 
+  <img src="assets/img/icono.png" alt="Icono del Repositorio" style="border: 2px solid #555; border-radius: 8px; width: 150px;">
+  </p>
