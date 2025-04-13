@@ -1,0 +1,53 @@
+# 🐧 Live Response on Linux: Essential Commands
+
+> Similar to Windows, performing Live Response on Linux involves executing commands on the live system to collect volatile information before shutting it down or isolating it for deeper forensic analysis. Use these commands with caution and redirect output to external media if possible.
+
+## Common Commands Table
+
+| Task/Objective                 | Linux Command                                                        | Notes / What to Look For                                                                                                                             |
+| :----------------------------- | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **System Information** | `uname -a`                                                           | Kernel info, architecture, hostname. Useful for Volatility profile.                                                                                |
+|                                | `hostname`                                                           | Hostname.                                                                                                                                            |
+|                                | `date`                                                               | Current system date and time.                                                                                                                        |
+|                                | `uptime`                                                             | System uptime, users, load average.                                                                                                                |
+|                                | `cat /etc/os-release` or `lsb_release -a`                            | Linux distribution details (Ubuntu, CentOS, etc.).                                                                                                 |
+|                                | `dmesg \| tail -n 50`                                                | Last kernel messages (hardware, drivers, errors).                                                                                                  |
+| **Running Processes** | `ps aux` or `ps -elf`                                                | **Fundamental:** Lists all processes, user, PID, PPID, CPU/MEM, full command. Look for suspicious processes/users, strange paths.                 |
+|                                | `pstree -p`                                                          | Shows processes in a tree with PIDs (parent-child relationships).                                                                                  |
+|                                | `top -n 1 -b` or `htop` (if available)                               | Real-time process view (CPU/MEM). `-n 1 -b` in `top` for non-interactive output.                                                                   |
+|                                | `ls -al /proc/<PID>/exe`                                             | Symbolic link to the original executable of process `<PID>`.                                                                                       |
+|                                | `cat /proc/<PID>/cmdline \| tr '\\0' ' '`                            | Full command line of process `<PID>` (NULLs replaced by spaces).                                                                                   |
+|                                | `cat /proc/<PID>/environ \| tr '\\0' '\\n'`                          | Environment variables of process `<PID>`.                                                                                                         |
+|                                | `lsof -p <PID>`                                                      | Lists files opened by process `<PID>`.                                                                                                              |
+| **Network Connections** | `ss -tulnp`                                                          | **Preferred:** Shows TCP (`-t`), UDP (`-u`) sockets, listening (`-l`), numeric (`-n`), process (`-p`). Look for C2 connections/ports, etc.          |
+|                                | `netstat -tulnp`                                                     | Legacy command similar to `ss`. May not be present by default.                                                                                     |
+|                                | `lsof -i`                                                            | Lists files/processes associated with network connections.                                                                                        |
+|                                | `lsof -i :<port>`                                                    | Shows which process is using a specific `<port>`.                                                                                                  |
+| **Logged-on Users** | `who`                                                                | Shows currently logged-on users, terminal, origin (IP).                                                                                          |
+|                                | `w`                                                                  | Similar to `who`, with more detail (what command they are running).                                                                               |
+|                                | `last`                                                               | Recent login history (reads `/var/log/wtmp`).                                                                                                    |
+|                                | `lastb`                                                              | Recent failed login history (reads `/var/log/btmp`, requires root).                                                                              |
+|                                | `id <user>`                                                          | Shows UID, GID, groups of `<user>`.                                                                                                                |
+|                                | `getent passwd <user>`                                               | Gets entry from `/etc/passwd` for `<user>`.                                                                                                        |
+|                                | `getent group <group>`                                               | Gets entry from `/etc/group` for `<group>`.                                                                                                       |
+| **Scheduled Tasks (`Cron`)** | `crontab -l -u <user>`                                               | Lists cron tasks for `<user>` (or current if omitted).                                                                                            |
+|                                | `ls -al /etc/cron.* /etc/crontab /etc/cron.d/`                       | Lists system cron task files/directories. Look for suspicious scripts/commands.                                                                  |
+| **Services / Daemons** | `systemctl status <service>.service` (systemd)                       | Status of a specific service.                                                                                                                        |
+|                                | `systemctl list-units --type=service --state=running` (systemd)      | Lists active services. Look for unknown/suspicious services.                                                                                       |
+|                                | `service --status-all` (SysV init)                                   | Status of services on older systems (SysV init).                                                                                                 |
+| **Kernel Modules** | `lsmod`                                                              | Lists loaded kernel modules. Look for strange modules (rootkits).                                                                                 |
+|                                | `modinfo <module>`                                                   | Detailed information about a `<module>`.                                                                                                          |
+| **Mounted File Systems** | `mount` or `findmnt`                                                 | Shows mounted file systems, options. Look for unexpected mounts.                                                                                   |
+| **Open Files** | `lsof`                                                               | **Very powerful:** Lists open files (regular, network, pipe...). Useful with `-p <PID>`, `-u <user>`, `-i`.                                        |
+| **Other (Config/Cache)** | `ip addr` (or `ifconfig`)                                            | IP configuration.                                                                                                                                  |
+|                                | `ip route` (or `route -n`)                                           | IP routing table.                                                                                                                                  |
+|                                | `ip neigh` (or `arp -n`)                                             | ARP cache (IP -> local MAC).                                                                                                                     |
+|                                | `cat /etc/resolv.conf`                                               | Configured DNS servers.                                                                                                                            |
+
+## 🛠️ External Tools (Mention)
+
+> More specialized tools exist for Live Response on Linux (like `UAC` - UAC forensic tool, custom scripts, etc.), but the built-in commands provide a large amount of initial information if used correctly.
+
+---
+
+> _Knowing these commands allows you to get a quick snapshot of a live Linux system's state during the initial phases of incident response._
