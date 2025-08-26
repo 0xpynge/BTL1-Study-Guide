@@ -5,7 +5,7 @@
 <h1 align="center">🛡️ BTL1 Practical Study Guide 🛡️</h1>
 
 <p align="center">
-  <em></em>
+  <em>A Hands-On Companion for the Blue Team Level 1 Certification</em>
 </p>
 
 <p align="center">
